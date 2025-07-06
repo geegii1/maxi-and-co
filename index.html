@@ -1,166 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maxi & Co.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f8f8;
-      color: #111;
+      background: #f5f5f5;
     }
-    header {
-      background-color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-    }
-    .logo {
-      font-size: 1.8rem;
-      font-weight: 800;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 24px;
-      margin: 0;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #111;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    nav ul li a:hover {
-      color: #2563eb;
-    }
+
     .hero {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 60px 40px;
-      background-color: #f0f0f0;
+      justify-content: center;
+      padding: 50px;
+      background: white;
+      flex-wrap: wrap;
     }
-    .hero-text {
-      max-width: 50%;
-    }
-    .hero-text h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .hero-text p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-    .btn {
-      padding: 12px 28px;
-      background-color: #2563eb;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    .hero-img img {
-      width: 360px;
+
+    .hero img {
+      max-width: 400px;
+      width: 100%;
       border-radius: 20px;
     }
-    .section {
-      padding: 60px 40px;
-      text-align: center;
+
+    .hero-text {
+      max-width: 500px;
+      margin-left: 40px;
     }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 40px;
+
+    .hero-text h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
-    .products {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      max-width: 1000px;
-      margin: 0 auto;
+
+    .hero-text p {
+      font-size: 20px;
+      margin-bottom: 20px;
     }
-    .product-card {
-      width: 180px;
-      background: white;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    .product-card img {
-      width: 100%;
+
+    .hero-text a {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
       border-radius: 8px;
-      margin-bottom: 12px;
+      font-weight: bold;
     }
-    .product-card h3 {
-      font-size: 1rem;
-      margin: 6px 0;
-    }
-    .product-card p {
-      font-weight: 600;
-      color: #333;
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Maxi & Co.</div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="gallery.html">Wanna See Me?</a></li>
-      </ul>
-    </nav>
-  </header>
 
   <section class="hero">
+    <img src="maxi-mascot.jpg" alt="Mascot Maxi" />
     <div class="hero-text">
       <h1>Welcome to Maxi & Co.</h1>
-      <p>Pet supplies curated by a dog who’s lived a full life — and wants yours to be just as comfy.</p>
-      <a href="shop.html" class="btn">SHOP NOW</a>
-    </div>
-    <div class="hero-img">
-      <img src="https://i.imgur.com/xPMrZVV.png" alt="Maxi the dog" />
+      <p>Pet Supplies for Your Dog</p>
+      <a href="shop.html">Shop Now</a>
     </div>
   </section>
 
-  <section class="section">
-    <h2>Best Sellers</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="https://i.imgur.com/3sL2xPR.png" alt="Pet Bed" />
-        <h3>Pet Bed</h3>
-        <p>$49</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/K5RMXZH.png" alt="Brown Dog Toy" />
-        <h3>Brown Dog</h3>
-        <p>$19</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/xgZbNiM.png" alt="Dog Food" />
-        <h3>Dog Food</h3>
-        <p>$39</p>
-      </div>
-      <div class="product-card">
-        <img src="https://i.imgur.com/DN2UDo1.png" alt="Dog Collar" />
-        <h3>Dog Collar</h3>
-        <p>$25</p>
-      </div>
-    </div>
-  </section>
 </body>
 </html>
