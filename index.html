@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,43 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maxi & Co.</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #fefefe;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
       color: #111;
     }
     header {
+      background-color: #fff;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background: #ffffff;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
     }
     .logo {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 800;
     }
     nav ul {
       list-style: none;
       display: flex;
       gap: 24px;
+      margin: 0;
     }
     nav ul li a {
       text-decoration: none;
       color: #111;
       font-weight: 500;
+      transition: color 0.2s;
     }
     nav ul li a:hover {
-      color: #3b82f6;
+      color: #2563eb;
     }
     .hero {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       padding: 60px 40px;
-      background-color: #fafafa;
+      background-color: #f0f0f0;
     }
     .hero-text {
       max-width: 50%;
@@ -54,15 +60,16 @@
       font-size: 1.2rem;
       margin-bottom: 30px;
     }
-    .hero-text .btn {
-      padding: 14px 28px;
+    .btn {
+      padding: 12px 28px;
       background-color: #2563eb;
       color: white;
       border: none;
       border-radius: 6px;
-      font-weight: 600;
+      font-size: 1rem;
       cursor: pointer;
       text-decoration: none;
+      font-weight: 600;
     }
     .hero-img img {
       width: 360px;
@@ -85,18 +92,20 @@
       margin: 0 auto;
     }
     .product-card {
-      width: 160px;
-      text-align: center;
+      width: 180px;
+      background: white;
+      padding: 16px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     .product-card img {
       width: 100%;
-      height: auto;
       border-radius: 8px;
       margin-bottom: 12px;
     }
     .product-card h3 {
       font-size: 1rem;
-      margin-bottom: 6px;
+      margin: 6px 0;
     }
     .product-card p {
       font-weight: 600;
@@ -109,10 +118,10 @@
     <div class="logo">Maxi & Co.</div>
     <nav>
       <ul>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Wanna See Me?</a></li>
+        <li><a href="index.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="gallery.html">Wanna See Me?</a></li>
       </ul>
     </nav>
   </header>
@@ -120,8 +129,8 @@
   <section class="hero">
     <div class="hero-text">
       <h1>Welcome to Maxi & Co.</h1>
-      <p>Pet Supplies for Your Dog</p>
-      <a href="#" class="btn">SHOP NOW</a>
+      <p>Pet supplies curated by a dog who’s lived a full life — and wants yours to be just as comfy.</p>
+      <a href="shop.html" class="btn">SHOP NOW</a>
     </div>
     <div class="hero-img">
       <img src="https://i.imgur.com/xPMrZVV.png" alt="Maxi the dog" />
